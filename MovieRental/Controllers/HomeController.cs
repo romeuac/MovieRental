@@ -8,11 +8,13 @@ namespace MovieRental.Controllers
 {
     public class HomeController : Controller
     {
+        [Route("Home/Index")]
         public ActionResult Index()
         {
             return View();
         }
 
+        [Route("Home/About")]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
@@ -20,6 +22,7 @@ namespace MovieRental.Controllers
             return View();
         }
 
+        [Route("Home/Contact")]
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
